@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venturi Meter Theory</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        .formula {
+            font-style: italic;
+            font-size: 1.2em;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .diagram {
+            max-width: 80%;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center; /* Center the caption */
+        }
+        .diagram img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .diagram figcaption {
+            margin-top: 5px;
+            font-style: italic;
+            font-size: smaller;
+            color: #777;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            nav li {
+                display: block; /* Stack list items vertically */
+                margin: 10px 0; /* Adjust vertical spacing */
+            }
+            nav ul{
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="main.html" class="back-button top-left">Back to Home</a>
+    <div class="section">
+        <h2>Aim</h2>
+        <p>To determine the flow rate of a fluid through a pipe using the principle of conservation of energy, particularly Bernoulli's equation.
+        To determine the coefficient of discharge for venturimeter. 
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Introduction</h2>
+        <p>A Venturi meter is a device used to measure the flow rate of a fluid through a pipe. It works on the principle of Bernoulli's equation, which relates the pressure and velocity of a fluid in motion, and the principle of continuity, which states that the mass flow rate of a fluid is constant throughout a pipe.</p>
+    </div>
+
+    <div class="section">
+        <h2>Working Principle</h2>
+        <p>The Venturi meter consists of a converging section, a throat (a section of reduced diameter), and a diverging section. As the fluid flows through the converging section, its velocity increases, and its pressure decreases. The pressure is at its minimum at the throat, where the velocity is at its maximum. As the fluid enters the diverging section, its velocity decreases, and its pressure increases, ideally recovering to the initial pressure.</p>
+        <div class="diagram">
+            <img src="https://4.bp.blogspot.com/-NAHQT_ItNWg/V21PWifr2DI/AAAAAAAAHGQ/3y8WJwYLiCYcvDppHimoCBxVSIHmOvI5ACLcB/s1600/venturi.png" alt="Venturi Meter Diagram">
+            <figcaption>Schematic diagram of a Venturi meter.</figcaption>
+        </div>
+        <p>By measuring the pressure difference between the wider section of the pipe and the throat, we can calculate the flow rate.</p>
+    </div>
+
+    <div class="section">
+        <h2>Formulae</h2>
+
+        <h3>Bernoulli's Equation (Simplified)</h3>
+        <p>For an incompressible fluid flowing along a streamline:</p>
+        <div class="formula">
+            P<sub>1</sub> + (1/2)ρv<sub>1</sub><sup>2</sup> = P<sub>2</sub> + (1/2)ρv<sub>2</sub><sup>2</sup>
+        </div>
+        <p>Where:</p>
+        <ul>
+            <li>P<sub>1</sub> and P<sub>2</sub> are the pressures at points 1 and 2, respectively.</li>
+            <li>v<sub>1</sub> and v<sub>2</sub> are the velocities at points 1 and 2, respectively.</li>
+            <li>ρ is the density of the fluid.</li>
+        </ul>
+
+        <h3>Continuity Equation</h3>
+        <p>For an incompressible fluid:</p>
+        <div class="formula">
+            A<sub>1</sub>v<sub>1</sub> = A<sub>2</sub>v<sub>2</sub>
+        </div>
+        <p>Where:</p>
+            <ul>
+                <li>A<sub>1</sub> and A<sub>2</sub> are the cross-sectional areas at points 1 and 2, respectively.</li>
+            </ul>
+
+        <h3>Flow Rate (Q)</h3>
+        <p>Combining Bernoulli's and continuity equations, we can derive the formula for flow rate:</p>
+        <div class="formula">
+            Q = A<sub>2</sub> * √(2(P<sub>1</sub> - P<sub>2</sub>) / ρ(1 - (A<sub>2</sub>/A<sub>1</sub>)<sup>2</sup>))
+        </div>
+        <p>Where:</p>
+        <ul>
+            <li>Q is the volumetric flow rate.</li>
+        </ul>
+
+        <h3>Coefficient of Discharge (C<sub>d</sub>)</h3>
+        <p>In real-world applications, the actual flow rate is often slightly lower than the theoretical flow rate due to energy losses. This is accounted for by the coefficient of discharge:</p>
+        <div class="formula">
+            Q<sub>actual</sub> = C<sub>d</sub> * Q<sub>theoretical</sub>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>Applications</h2>
+        <p>Venturi meters are widely used in various applications, including:</p>
+        <ul>
+            <li>Measuring flow rates in pipes and ducts.</li>
+            <li>Carburetors in internal combustion engines.</li>
+            <li>Medical applications, such as measuring blood flow.</li>
+        </ul>
+    </div>
+</body>
+</html>

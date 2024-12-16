@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venturi Meter Procedure</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0056b3; /* Light green */
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .apparatus {
+            margin-bottom: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) { /* Adjust breakpoint as needed */
+            body {
+                margin: 10px; /* Reduce margins on smaller screens */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Reduce heading size */
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+            ol{
+                padding-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="main.html" class="back-button top-left">Back to Home</a>
+    <div class="apparatus">
+        <h2>Apparatus</h2>
+        <ul>
+            <li>Venturi meter setup (including converging section, throat, diverging section, and pressure tappings)</li>
+            <li>Manometers (at least two)</li>
+            <li>Fluid (typically water)</li>
+            <li>Measuring tank or container for flow rate measurement</li>
+            <li>Stopwatch or timer</li>
+            <li>Connecting tubes</li>
+            <li>Valve to control flow rate</li>
+        </ul>
+    </div>
+
+    <h2>Procedure</h2>
+
+    <ol>
+        <li><b>Setup the Apparatus:</b> Ensure the Venturi meter is properly connected to the piping system. Connect the manometers to the pressure tappings at the wider section (upstream) and the throat of the Venturi meter.</li>
+        <li><b>Fill the System:</b> Fill the piping system and manometers with the working fluid (e.g., water). Ensure that there are no air bubbles trapped in the system or the connecting tubes, as they can affect the pressure readings.</li>
+        <li><b>Establish Flow:</b> Open the valve to establish flow through the Venturi meter. Adjust the valve to obtain a steady flow rate.</li>
+        <li><b>Take Initial Readings:</b> Once the flow is stable, record the initial readings of the fluid levels in both manometers. These readings will be used to determine the pressure difference (Δh).</li>
+        <li><b>Measure Flow Rate:</b> Measure the volumetric flow rate (Q) using a measuring tank and a stopwatch. Collect a known volume of fluid over a measured time interval. Alternatively, if you have a flow meter, you can use it to directly measure the flow rate.</li>
+        <li><b>Vary Flow Rate:</b> Change the flow rate by adjusting the valve and repeat steps 4 and 5 for several different flow rates. This will provide you with a range of data points to analyze.</li>
+        <li><b>Record Observations:</b> For each flow rate, record the manometer readings (h1 and h2) and the corresponding flow rate (Q) in a table.</li>
+        <li><b>Calculate Pressure Difference:</b> Calculate the pressure difference (Δh) between the two manometers for each trial using the formula Δh = h1 - h2.</li>
+        <li><b>Calculations and Analysis:</b> Use the recorded data to calculate the theoretical flow rate (Q<sub>th</sub>) using Bernoulli's equation and the continuity equation. Compare the theoretical flow rates with the actual measured flow rates (Q<sub>act</sub>) and calculate the coefficient of discharge (C<sub>d</sub>).</li>
+        <li><b>Repeat and Analyze:</b> Repeat the experiment multiple times to ensure consistency and improve the reliability of your results. Analyze the data to understand the relationship between pressure difference and flow rate in a Venturi meter.</li>
+    </ol>
+
+</body>
+</html>
